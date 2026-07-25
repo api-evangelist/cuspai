@@ -1,8 +1,26 @@
 aid: cuspai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cuspai.png
 name: Cuspai
-description: 'Cuspai is a company surfaced as a portfolio company of northzone, prosus-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: enterprise; ai. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'CuspAI is a Cambridge, UK artificial intelligence company, founded in 2024,
+  building generative AI for materials discovery. Its platform lets users specify desired
+  physical and chemical properties — such as selective CO2 binding — and then generates,
+  evaluates, and optimizes candidate molecular and material structures for applications
+  spanning carbon capture, energy storage, catalysis, water purification, electric vehicles,
+  and healthcare. CuspAI has raised roughly $130M (a $30M seed and a $100M Series A in
+  September 2025) from investors including Northzone and Prosus Ventures, and maintains
+  open-source scientific computing tooling on GitHub. As of mid-2026 the company operates
+  a placeholder marketing site with no public API, developer portal, or SDK surface.'
 url: https://raw.githubusercontent.com/api-evangelist/cuspai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Enterprise; Ai
+- Artificial Intelligence
+- Materials Discovery
+- Materials Science
+- Deep Learning
+- Carbon Capture
+- Enterprise
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +48,15 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.cuspai.com
+  url: https://www.cusp.ai/
+- type: GitHubOrganization
+  url: https://github.com/Cusp-AI
+- type: SourceCode
+  url: https://github.com/cusp-ai-oss
+- type: DomainSecurity
+  url: security/cuspai-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
